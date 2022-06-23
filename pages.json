@@ -1,0 +1,97 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+                "app-plus": {
+                	"titleNView": false
+                }
+			}
+		}
+	    ,{
+            "path" : "pages/goods/goods",
+            "style" :                                                                                    
+            {
+                "app-plus": {
+                	"titleNView": {
+						"titleText": "商品分类"
+					}
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/carts/carts",
+            "style" :                                                                                    
+            {
+                "app-plus": {
+                	"titleNView": {
+            			"titleText": "购物车"
+            		}
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "app-plus": {
+                	"titleNView": {
+						"titleText": "我的主页"
+					}
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "app-plus": {
+                	"titleNView": false
+                }
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"backgroundColor": "#FFFAE8",
+		"color":"#999999",
+		"selectedColor": "#007AFF",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/main.png"
+                
+			
+			},
+			{
+				"text": "分类",
+				"pagePath": "pages/goods/goods",
+				"iconPath": "static/goods.png"
+				
+			},
+			{
+				"text": "购物车",
+				"pagePath": "pages/carts/carts",
+				"iconPath": "static/cart.png"
+			
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/my",
+				"iconPath": "./static/my.png"
+				
+			}
+		]
+		
+	}
+}
